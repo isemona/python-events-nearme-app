@@ -14,7 +14,7 @@ app.secret_key = "meet-python"
 @app.route("/")
 def hello():
     """Homepage"""
-    render_template("index.html")
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run()
